@@ -19,4 +19,4 @@ public:
     ~MusicBox(); // A default destructor
 };
 
-#endif;
+#endif
