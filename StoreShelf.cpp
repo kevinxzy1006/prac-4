@@ -37,7 +37,7 @@ bool StoreShelf::add_music_box(MusicBox musicbox)
 
     // Add music box to the shelf
     MusicBox *new_music_boxes = new MusicBox[num_music_boxes + 1];
-    for (int i = 0; i < num_music_boxes; ++i)
+    for (int i = 0; i < num_music_boxes; i++)
     {
         new_music_boxes[i] = music_boxes[i];
     }
