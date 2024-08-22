@@ -7,7 +7,7 @@ StoreShelf::StoreShelf() : width(0), current_width(0), num_music_boxes(0), music
 }
 
 // Constructor with specified width
-StoreShelf::StoreShelf(int w) : width(w), current_width(0), num_music_boxes(0), music_boxes(nullptr) {}
+StoreShelf::StoreShelf(int width) : width(w), current_width(0), num_music_boxes(0), music_boxes(nullptr) {}
 
 // Returns the width of the shelf
 int StoreShelf::get_width()
