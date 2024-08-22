@@ -1,16 +1,23 @@
-#include <iostream>
 #include "MusicBox.h"
 
-// constructor
-MusicBox::MusicBox() : songname(""), width(0) {}
-MusicBox::MusicBox(std::string songname, int width) : songname(songname), width(width) {}
+// Default constructor
+MusicBox::MusicBox() : song_name(""), width(0) {}
 
-// Getter
+// Constructor with song and width
+MusicBox::MusicBox(std::string songname, int width) : song_name(songname), width(width) {}
+
 std::string MusicBox::get_song()
 {
-    return songname;
+    return song_name;
 }
+
 int MusicBox::get_width()
 {
     return width;
+}
+
+// Destructor
+MusicBox::~MusicBox()
+{
+    // No dynamic memory to free, so the default destructor is sufficient
 }
