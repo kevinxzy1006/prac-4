@@ -1,14 +1,14 @@
 #include "MusicBox.h"
 
 // Default constructor
-MusicBox::MusicBox() : song_name(""), width(0) {}
+MusicBox::MusicBox() : songname(""), width(0) {}
 
 // Constructor with song and width
-MusicBox::MusicBox(std::string songname, int width) : song_name(songname), width(width) {}
+MusicBox::MusicBox(std::string songname, int width) : songname(songname), width(width) {}
 
 std::string MusicBox::get_song()
 {
-    return song_name;
+    return songname;
 }
 
 int MusicBox::get_width()
